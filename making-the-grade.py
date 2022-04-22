@@ -1,6 +1,5 @@
 """Functions for organizing and calculating student exam scores."""
 
-
 def round_scores(student_scores):
     """Round all provided student scores.
 
@@ -8,7 +7,6 @@ def round_scores(student_scores):
     :return: list - student scores *rounded* to nearest integer value.
     """
     return [round(item) for item in student_scores]
-
 
 def count_failed_students(student_scores):
     """Count the number of failing students out of the group provided.
@@ -63,7 +61,6 @@ def student_ranking(student_scores, student_names):
     for index, score in enumerate(student_scores):
         ranked_students.append(f"{index+1}. {student_names[index]}: {score}")
     return ranked_students
-
 
 def perfect_score(student_info):
     """Create a list that contains the name and grade of the first student to make a perfect score on the exam.
