@@ -34,5 +34,3 @@ def score(word):
         if word.upper()[index] in ['Q', 'Z']:
             score += 10
     return score
-
-
